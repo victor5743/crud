@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
     <title> @yield('title') </title>
   </head>
-  <body>
-    <div class="">
+  <body class="bg-gray-300">
+    <div>
+      <h1 class="font-montserrat text-3xl text-center mt-16 font-medium">CRUD</h1>
 	    @yield('content')
     </div>
   </body>

@@ -13,7 +13,25 @@ class NewUser extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $users = [
+            ['nombre' => 'Luis', 
+            'apellido' => 'Perez', 
+            'telefono' => '0123', 
+            'correo' => 'correo1@example.com'
+            ],
+            ['nombre' => 'Maria', 
+            'apellido' => 'Parra', 
+            'telefono' => '4567', 
+            'correo' => 'correo2@example.com'
+            ],
+            ['nombre' => 'Oscar', 
+            'apellido' => 'Lopez', 
+            'telefono' => '7894', 
+            'correo' => 'correo3@example.com'
+            ]
+        ];
+
+        return view('pages.home', compact('users'));
     }
 
     /**
