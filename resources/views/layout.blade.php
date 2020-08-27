@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <meta name="description" content="Web page"> -->
+    <meta name="description" content="Aplicación web para crear, leer, actualizar y eliminar usuarios."> 
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
-    <!--<link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/png">-->
+    <title> @yield('title') </title>
   </head>
   <body>
     <div class="">
-	Layout
+	    @yield('content')
     </div>
   </body>
 </html>
