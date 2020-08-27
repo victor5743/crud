@@ -2,6 +2,6 @@
 
 @section('title', 'CRUD - Home')
 
-@section('name')
+@section('content')
     Layout!
 @endsection
