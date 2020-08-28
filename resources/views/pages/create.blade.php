@@ -11,7 +11,9 @@
         Nombre
       </label>
       <input name="name" class="input input:focus" type="text" placeholder="Ingresa tu nombre" value="{{ old('name') }}">
-      {!! $errors->first('name', '<p class="text-red-500 text-xs italic">:message</p>') !!}
+      @error('name')
+        <p class="text-red-500 text-xs italic">{{ $message }}</p>
+      @enderror
     </div>
 
     {{-- Lastname input --}}
@@ -20,7 +22,9 @@
         Apellido
       </label>
       <input name="lastname" class="input input:focus" type="text" placeholder="Ingresa tu apellido" value="{{ old('lastname') }}">
-      {!! $errors->first('lastname', '<p class="text-red-500 text-xs italic">:message</p>') !!}
+      @error('lastname')
+        <p class="text-red-500 text-xs italic">{{ $message }}</p>
+      @enderror
     </div>
 
     {{-- Phone input --}}
@@ -29,7 +33,9 @@
         Teléfono
       </label>
       <input name="phone" class="input input:focus" type="text" placeholder="Ingresa tu teléfono" value="{{ old('phone') }}">
-      {!! $errors->first('phone', '<p class="text-red-500 text-xs italic">:message</p>') !!}
+      @error('phone')
+        <p class="text-red-500 text-xs italic">{{ $message }}</p>
+      @enderror
     </div>
 
     {{-- Email input --}}
@@ -38,7 +44,9 @@
         Correo
       </label>
       <input name="email" class="input input:focus" type="text" placeholder="example@example.com" value="{{ old('email') }}">
-      {!! $errors->first('email', '<p class="text-red-500 text-xs italic">:message</p>') !!}
+      @error('email')
+        <p class="text-red-500 text-xs italic">{{ $message }}</p>
+      @enderror
     </div>
 
     {{-- Add button --}}
