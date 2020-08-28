@@ -41,12 +41,12 @@
               {{ $user->email }}
             </td>
             <td class="flex text-left py-3 px-4">
-              <button class="btn-green btn-green:hover btn-green:focus mr-1">
+              <a href="#" class="btn-green btn-green:hover btn-green:focus mr-1">
                 Editar
-              </button>
-              <button class="btn-red btn-red:hover btn-red:focus ml-1">
+              </a href="#">
+              <a href="#" class="btn-red btn-red:hover btn-red:focus ml-1">
                 Eliminar
-              </button>
+              </a href="#">
             </td>
             @empty
             <p>No hay usuarios para mostrar</p>
@@ -61,10 +61,10 @@
       </div>
 
       {{-- New user button --}}
-      <div class="bg-white py-8">
-        <button class="btn-blue btn-blue:hover btn-blue:focus">
-          <a href="{{ route('user.create') }}">Nuevo usuario</a>
-        </button>
+      <div class="bg-white py-8 flex justify-center">
+        <a class="btn-blue btn-blue:hover btn-blue:focus" href="{{ route('user.create') }}">
+          Nuevo usuario
+        </a>
       </div>
     </div>
   </div>

@@ -36,9 +36,21 @@ class NewUser extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+        $fields = request()->validate([
+            'name' => 'required|alpha',
+            'lastname' => 'required|alpha',
+            'phone' => 'required|integer',
+            'email' => 'required|email|unique:users',
+        ],[
+            'email.email' => 'Por favor ingrese una dirección de correo electrónico válida',
+            'email.unique' => 'El correo que introdujo ya se encuentra registrado'
+        ]);
+
+        User::create($fields);
+
+        return redirect()->route('user.index');
     }
 
     /**
