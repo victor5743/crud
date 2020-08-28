@@ -10,7 +10,9 @@
   </head>
   <body class="bg-gray-300">
     <div>
-      <h1 class="font-montserrat text-3xl text-center mt-16 font-medium">CRUD</h1>
+    <a href="{{ route('user.index') }}">
+        <h1 class="font-montserrat text-3xl text-center mt-16 font-medium">CRUD</h1>
+      </a>
 	    @yield('content')
     </div>
   </body>

@@ -44,9 +44,9 @@
               <button class="mx-2">Editar</button>
               <button class="mx-2">Eliminar</button>
             </td>
-            @empty
-              <p>No hay usuarios para mostrar</p>
-            @endforelse
+      @empty
+        <p>No hay usuarios para mostrar</p>
+      @endforelse
           </tr>
         </tbody>
       </table>
