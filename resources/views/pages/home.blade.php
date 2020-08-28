@@ -48,12 +48,24 @@
                 Eliminar
               </button>
             </td>
-      @empty
-        <p>No hay usuarios para mostrar</p>
-      @endforelse
+            @empty
+            <p>No hay usuarios para mostrar</p>
+            @endforelse
           </tr>
         </tbody>
       </table>
+      
+      <div class="bg-white px-4">
+        {{-- Pagination links --}}
+        {{ $users->links() }}
+      </div>
+
+      {{-- New user button --}}
+      <div class="bg-white py-8">
+        <button class="btn-blue btn-blue:hover btn-blue:focus mx-auto block">
+          Nuevo usuario
+        </button>
+      </div>
     </div>
   </div>
 @endsection
