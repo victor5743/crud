@@ -41,8 +41,12 @@
               {{ $user->email }}
             </td>
             <td class="flex text-left py-3 px-4">
-              <button class="mx-2">Editar</button>
-              <button class="mx-2">Eliminar</button>
+              <button class="btn-green btn-green:hover btn-green:focus mr-1">
+                Editar
+              </button>
+              <button class="btn-red btn-red:hover btn-red:focus ml-1">
+                Eliminar
+              </button>
             </td>
       @empty
         <p>No hay usuarios para mostrar</p>
