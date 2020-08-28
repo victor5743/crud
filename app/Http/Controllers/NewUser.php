@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class NewUser extends Controller
@@ -13,23 +14,8 @@ class NewUser extends Controller
      */
     public function index()
     {
-        $users = [
-            ['nombre' => 'Luis', 
-            'apellido' => 'Perez', 
-            'telefono' => '0123', 
-            'correo' => 'correo1@example.com'
-            ],
-            ['nombre' => 'Maria', 
-            'apellido' => 'Parra', 
-            'telefono' => '4567', 
-            'correo' => 'correo2@example.com'
-            ],
-            ['nombre' => 'Oscar', 
-            'apellido' => 'Lopez', 
-            'telefono' => '7894', 
-            'correo' => 'correo3@example.com'
-            ]
-        ];
+
+        $users = User::get();
 
         return view('pages.home', compact('users'));
     }

@@ -29,16 +29,16 @@
         <tbody class="text-gray-700">
           <tr>
             <td class="w-1/6 text-left py-3 px-4">
-              {{ $user['nombre'] }}
+              {{ $user->name }}
             </td>
             <td class="w-1/6 text-left py-3 px-4">
-              {{ $user['apellido'] }}
+              {{ $user->lastname }}
             </td>
             <td class="w-1/5 text-left py-3 px-4">
-              {{ $user['telefono'] }}
+              {{ $user->phone }}
             </td>
             <td class="w-1/3 text-left py-3 px-4">
-              {{ $user['correo'] }}
+              {{ $user->email }}
             </td>
             <td class="flex text-left py-3 px-4">
               <button class="mx-2">Editar</button>
