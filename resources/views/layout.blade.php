@@ -11,7 +11,7 @@
   <body class="bg-gray-300">
     <div>
     <a href="{{ route('user.index') }}">
-        <h1 class="font-montserrat text-3xl text-center mt-16 font-medium">CRUD</h1>
+        <h1 class="font-montserrat text-3xl text-center mt-8 font-medium">CRUD</h1>
       </a>
 	    @yield('content')
     </div>

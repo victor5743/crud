@@ -15,7 +15,7 @@ class NewUser extends Controller
     public function index()
     {
 
-        $users = User::latest()->paginate(2);
+        $users = User::latest()->paginate(4);
 
         return view('pages.home', compact('users'));
     }
@@ -27,7 +27,7 @@ class NewUser extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.create');
     }
 
     /**

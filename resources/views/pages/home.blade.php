@@ -3,7 +3,7 @@
 @section('title', 'CRUD - Home')
 
 @section('content')
-  <div class="md:px-32 w-full my-16">
+  <div class="md:px-32 w-full my-8">
     <div class="shadow overflow-hidden rounded border-b border-gray-200">
       <table class="min-w-full bg-white">
         <thead class="bg-gray-800 text-white">
@@ -62,8 +62,8 @@
 
       {{-- New user button --}}
       <div class="bg-white py-8">
-        <button class="btn-blue btn-blue:hover btn-blue:focus mx-auto block">
-          Nuevo usuario
+        <button class="btn-blue btn-blue:hover btn-blue:focus">
+          <a href="{{ route('user.create') }}">Nuevo usuario</a>
         </button>
       </div>
     </div>
