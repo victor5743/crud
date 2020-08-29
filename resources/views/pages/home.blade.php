@@ -41,7 +41,7 @@
               {{ $user->email }}
             </td>
             <td class="flex text-left py-3 px-4">
-              <a href="#" class="btn-green btn-green:hover btn-green:focus mr-1">
+            <a href="{{ route('user.edit', $user) }}" class="btn-green btn-green:hover btn-green:focus mr-1">
                 Editar
               </a href="#">
               <a href="#" class="btn-red btn-red:hover btn-red:focus ml-1">
