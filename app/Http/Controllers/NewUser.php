@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests\UserRequest;
+use App\Http\Requests\UpdateRequest;
 
 class NewUser extends Controller
 {
@@ -75,7 +76,7 @@ class NewUser extends Controller
      * @param  int  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(User $user, UserRequest $request)
+    public function update(User $user, UpdateRequest $request)
     {
         /* User update in the database */
         $user->update( $request->validated() );
