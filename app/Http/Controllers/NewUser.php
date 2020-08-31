@@ -92,8 +92,18 @@ class NewUser extends Controller
      * @param  int  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy($user)
+
+    public function delete(User $user)
     {
-        //
+        return view('pages.delete', [
+            'user' => $user
+        ]);
+    }
+
+    public function destroy(User $user)
+    {
+        $user->delete();
+
+        return redirect()->route('user.index');
     }
 }

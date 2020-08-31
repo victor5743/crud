@@ -12,3 +12,7 @@ Route::post('crear', 'NewUser@store')->name('user.store');
 /* User edit */
 Route::get('editar/{user}', 'NewUser@edit')->name('user.edit');
 Route::patch('editar/{user}', 'NewUser@update')->name('user.update');
+
+/* User delete */
+Route::get('eliminar/{user}', 'NewUser@delete')->name('user.delete');
+Route::delete('eliminar/{user}','NewUser@destroy')->name('user.destroy');

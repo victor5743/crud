@@ -42,11 +42,11 @@
             </td>
             <td class="flex text-left py-3 px-4">
             <a href="{{ route('user.edit', $user) }}" class="btn-green btn-green:hover btn-green:focus mr-1">
-                Editar
-              </a href="#">
-              <a href="#" class="btn-red btn-red:hover btn-red:focus ml-1">
-                Eliminar
-              </a href="#">
+              Editar
+            </a href="#">
+            <a href="{{ route('user.delete', $user) }}" class="btn-red btn-red:hover btn-red:focus ml-1">
+              Eliminar
+            </a href="#">
             </td>
             @empty
             <p>No hay usuarios para mostrar</p>
