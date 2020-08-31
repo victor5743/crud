@@ -29,7 +29,9 @@ class NewUser extends Controller
      */
     public function create()
     {
-        return view('pages.create');
+        return view('pages.create', [
+            'user' => new User
+        ]);
     }
 
     /**
